@@ -9,27 +9,20 @@ export const FeedbackOptions = ({ setGood, setBad, setNeutral }) => {
         </button>
       </li>
       <li>
-        <button
-          type="button"
-          onClick={setNeutral}
-          // onClick={() => onLeaveFeedback(option)}
-        >
+        <button type="button" onClick={setNeutral}>
           Neutral
         </button>
       </li>
       <li>
-        <button
-          type="button"
-          onClick={setBad}
-          // onClick={() => onLeaveFeedback(option)}
-        >
+        <button type="button" onClick={setBad}>
           Bad
         </button>
       </li>
     </ul>
   );
 };
-// FeedbackOptions.propTypes = {
-//   options: PropTypes.array.isRequired,
-//   // onLeaveFeedback: PropTypes.func.isRequired,
-// };
+FeedbackOptions.propTypes = {
+  setGood: PropTypes.func.isRequired,
+  setNeutral: PropTypes.func.isRequired,
+  setBad: PropTypes.func.isRequired,
+};
