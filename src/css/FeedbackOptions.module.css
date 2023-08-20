@@ -1,0 +1,11 @@
+.buttonList {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.buttonList > button {
+  padding: 30px;
+  font-size: 40px;
+  color: aliceblue;
+  background-color: #333;
+}
